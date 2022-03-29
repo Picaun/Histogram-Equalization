@@ -46,4 +46,5 @@ for d = 1:dep
     end
 end
 %打印
-imshow(I,[]);title('HE');
+subplot(1,2,1);imshow(I,[]);title('HE');
+subplot(1,2,2);histogram(I);title('Histogram');
