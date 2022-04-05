@@ -1,5 +1,5 @@
-clc;clear;
 % 对课本《数字图像处理学》"直方图均衡化"一节知识点的复现
+clc;clear;close all;
 PATH='resourse/woman.tiff';
 I = imread(PATH);
 I_mixed = [I(:,:,1);I(:,:,2);I(:,:,3)];
