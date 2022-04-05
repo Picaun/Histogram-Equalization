@@ -10,7 +10,7 @@ y = zeros(size(x));
 for i = 1:r
     for k = 1:col
         for j = I_mixed(i,k)
-            y(x==j) = y(x==j) + 1;%统计灰度值的像素个数
+            y(x==j) = y(x==j) + 1;%统计每种灰度值的像素个数
         end
     end
 end
