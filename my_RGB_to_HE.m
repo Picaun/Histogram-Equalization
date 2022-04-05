@@ -14,13 +14,13 @@ for i = 1:r
         end
     end
 end
-stat = [x,y];%统计结果，stat(1)与stat(2)分别代表图像灰度级和与之对应的像素个数
+stat = [x,y];%统计结果，stat(1)与stat(2)分别代表图像的每种灰度值和与之对应的像素个数
 n = r*col;%总像素个数
 %以下代码复用某些变量以图简洁
 [r,~] = size(stat);
 z = zeros(size(x));
 for i = 1:r
-    y(i) = stat(i,2)/n;%计算每个灰度级出现的频率
+    y(i) = stat(i,2)/n;%计算每种灰度值出现的频率
     for j = 1:i
         z(i) = z(i)+y(j);%计算累积概率
     end
