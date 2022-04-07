@@ -2,6 +2,7 @@
 clc;clear;close all;
 PATH='resourse/woman.tiff';
 I = imread(PATH);
+I_origin = I;
 I_mixed = [I(:,:,1);I(:,:,2);I(:,:,3)];
 %Statistics:
 x = double(unique(I_mixed));
@@ -46,5 +47,6 @@ for d = 1:dep
     end
 end
 %打印
-subplot(1,2,1);imshow(I,[]);title('HE');
-subplot(1,2,2);histogram(I);title('Histogram');
+subplot(1,3,1);imshow(I_origin,[]);title('Origin');
+subplot(1,3,2);imshow(I,[]);title('HE');
+subplot(1,3,3);histogram(I);title('Histogram');
