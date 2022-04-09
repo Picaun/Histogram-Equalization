@@ -26,7 +26,7 @@ for i = 1:r
         z(i) = z(i)+y(j);%计算累积概率
     end
 end
-%p_stat在stat基础上增加第三列：灰度级对应出现的频率；第四列：累积概率
+%p_stat在stat基础上增加第三列：灰度值对应出现的频率；第四列：累积概率
 p_stat = [stat,y,z];
 %直方图均衡：
 [r,~] = size(p_stat);
