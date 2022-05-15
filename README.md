@@ -1,2 +1,2 @@
 # 24位真彩图实现直方图均衡
-![效果图](https://github.com/Picaun/RGBtoHE/blob/main/outcome.jpg)
+<img src="https://github.com/Picaun/RGBtoHE/blob/main/outcome.jpg" width="150px">
